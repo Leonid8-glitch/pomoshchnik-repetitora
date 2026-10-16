@@ -1,1 +1,1 @@
-# pomoshchnik-repetitora
+# pomoshchnik.repetitora
