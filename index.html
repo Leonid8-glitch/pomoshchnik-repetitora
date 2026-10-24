@@ -241,5 +241,22 @@ button.secondary{background:#e7eee9;color:#20352d}
     Отправить
   </button>
 </div>
+<script>
+  const aiQuestion = document.getElementById("ai-question");
+  const aiMessages = document.getElementById("ai-messages");
+  const aiSend = document.getElementById("ai-send");
+
+  aiSend.addEventListener("click", function () {
+    const question = aiQuestion.value.trim();
+
+    if (question === "") {
+      aiMessages.textContent = "Сначала напиши вопрос!";
+      return;
+    }
+
+    aiMessages.textContent = "Твой вопрос: " + question;
+    aiQuestion.value = "";
+  });
+</script>
 </body>
 </html>
