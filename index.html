@@ -216,7 +216,30 @@ button.secondary{background:#e7eee9;color:#20352d}
   renderLessons();
   renderTasks();
 }());
-console.log("Помощник-репетитор работает!");
 </script>
+<!-- Чат с ИИ-репетитором -->
+<div id="ai-tutor" style="max-width:500px;margin:20px auto;padding:16px;border:1px solid #ccc;border-radius:12px;font-family:Arial,sans-serif;">
+  <h2>🤖 ИИ-репетитор</h2>
+  <p>Задай вопрос по школьной теме:</p>
+
+  <div id="ai-messages" style="min-height:60px;padding:12px;background:#f3f3f3;border-radius:8px;">
+    Привет! Я помогу тебе разобраться в учёбе.
+  </div>
+
+  <input
+    id="ai-question"
+    type="text"
+    placeholder="Например: объясни дроби"
+    style="width:100%;box-sizing:border-box;margin-top:10px;padding:12px;"
+  >
+
+  <button
+    id="ai-send"
+    type="button"
+    style="margin-top:10px;padding:10px 16px;cursor:pointer;"
+  >
+    Отправить
+  </button>
+</div>
 </body>
 </html>
